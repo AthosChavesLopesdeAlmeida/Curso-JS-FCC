@@ -19,7 +19,12 @@ h2 {
   margin-top: 20px;
 }
 
-button {
+p {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button#increment-btn {
   display: flex;
   justify-self: center;
   justify-content: center;
@@ -28,7 +33,24 @@ button {
 
   background-color: rgb(255, 56, 56);
   color: white;
-  border: 1 px solid black;
+  border: 1px solid black;
+  height: 40px;
+  width: 200px;
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+
+button#save-btn {
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+
+  background-color: rgb(56, 255, 89);
+  color: black;
+  border: 1px solid black;
   height: 40px;
   width: 200px;
   border-radius: 5px;
