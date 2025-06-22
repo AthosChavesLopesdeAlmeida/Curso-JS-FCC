@@ -20,6 +20,7 @@ h1 {
 p {
   color: white;
   margin-top: 30px;
+  margin-bottom: 30px;
   font-size: 1.15em;
 }
 
@@ -30,16 +31,29 @@ p {
   font-style: italic;
 }
 
-#btn-start {
+
+.button-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#btn-start, #btn-newcard {
+  
   border: none;
   border-radius: 5px;
-  margin-top: 30px;
   padding: 10px;
+  margin-top: 10px;
+  
   font-family: Arial, Helvetica, sans-serif;
-  width: 150px;
-  background-color: rgb(190, 143, 27);
-  color: #016f32;
   font-size: 1.2em;
-  cursor: pointer;
   font-weight: bold;
+  cursor: pointer;
+
+  width: 150px;
+  
+  background-color: rgb(190, 143, 27);
+  color: #015125;
+
 }
