@@ -1,6 +1,5 @@
-
-let c1 = 10
-let c2 = 4
+let c1 = getRandomCard()
+let c2 = getRandomCard()
 let cards = [c1, c2]
 let sum = c1 + c2
 let hasBlackJack = false
@@ -11,6 +10,9 @@ let messageEL = document.getElementById("msg-el")
 let sumEL = document.getElementById("sum-el")
 let cardsEL = document.getElementById("cards-el")
 
+function getRandomCard() {
+  return 5
+}
 
 function startGame() {
   renderGame()
@@ -29,13 +31,18 @@ function renderGame() {
 
   messageEL.innerHTML = message
   sumEL.innerHTML = "Sum: " + sum
-  cardsEL.innerHTML = `Sum: ${cards[0]}, ${cards[1]}`
+  
+  cardsEL.innerHTML = "Cards: "
+  for(let i = 0; i < cards.length; i++){
+    cardsEL.innerHTML += cards[i] + " "
+  }
 }
 
 function newcard() {
-  let newcard = 7
+  let newcard = getRandomCard()
   sum += newcard
   cards.push(newcard)
   
   renderGame()
 }
+
