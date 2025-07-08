@@ -1,3 +1,6 @@
-let random = Math.floor(Math.random()*6) + 1
+function rollDice() {
+  let random = Math.floor(Math.random()*6) + 1
+  console.log(random)
+}
 
-console.log(random)
+rollDice()
