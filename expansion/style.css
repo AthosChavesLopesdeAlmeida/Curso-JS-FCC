@@ -26,6 +26,17 @@ body {
   background-color: #5f9341;
   font-weight: bold;
   border: none;
+  cursor: pointer;
+}
+
+#delete-btn {
+  height: 50px;
+  width: 130px;
+  color: #5f9341;
+  background-color: color;
+  font-weight: bold;
+  border: 1px solid #5f9341;
+  cursor: pointer;
 }
 
 
